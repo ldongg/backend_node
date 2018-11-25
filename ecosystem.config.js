@@ -17,13 +17,13 @@ module.exports = {
   ],
   deploy: {
     development: {
-      key: '~/.ssh/{key path}',
-      user: '{root user}',
-      host: '{host address}',
+      key: '~/.ssh/awsKey.pem',
+      user: 'ubuntu',
+      host: ["54.180.116.188"],
       ref: 'origin/develop',
-      repo: '{git repo}',
+      repo: 'https://github.com/ldongg/backend_node.git',
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no', 'ForwardAgent=yes'],
-      path: '{install path}',
+      path: '/var/www/backend_node_develop',
       'pre-setup' : 'scripts/pre-setup.sh',
       'post-deploy': 'npm i --production;pm2 startOrReload ecosystem.config.js development',
       env: {
@@ -32,8 +32,8 @@ module.exports = {
       }
     },
     production: {
-      key: '~/.ssh/{key path}',
-      user: '{root user}',
+      key: '~/.ssh/awsKey.pem',
+      user: 'ubuntu',
       host: '{host address}',
       ref: 'origin/{branch}',
       repo: '{git repo}',
