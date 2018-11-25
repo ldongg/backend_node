@@ -40,7 +40,7 @@ module.exports.createUser = async (options, connection) => {
   }
   catch (err) {
     throw err
-      
+
   }
 }
 
