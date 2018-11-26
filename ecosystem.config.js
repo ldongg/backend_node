@@ -23,7 +23,7 @@ module.exports = {
       ref: 'origin/develop',
       repo: 'git@github.com:ldongg/backend_node.git',
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no', 'ForwardAgent=yes'],
-      path: '~/home/ubuntu/backend_node',
+      path: '/home/ubuntu/backend_node',
       'pre-setup' : 'scripts/pre-setup.sh',
       'post-deploy': 'npm i --production;pm2 startOrReload ecosystem.config.js development',
       env: {
