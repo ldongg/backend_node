@@ -4,7 +4,7 @@ module.exports = {
       name: 'backend',
       cwd: './',
       script: 'npm',
-      args: ['start'],
+      args: ['run', 'dev'],
       log_date_format: "YYYY-MM-DD HH:mm:ss Z",
       env: {
         COMMON_VARIABLE: 'true',
