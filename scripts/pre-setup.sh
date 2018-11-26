@@ -13,4 +13,4 @@ sudo yum -y install ImageMagick
 sudo npm install -g pm2
 pm2 update
 
-ssh -o StrictHostKeyChecking=no git@bitbucket.org
+ssh -o StrictHostKeyChecking=no git@github.com

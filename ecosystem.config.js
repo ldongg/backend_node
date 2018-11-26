@@ -19,7 +19,7 @@ module.exports = {
     development: {
       key: '~/.ssh/awsKey.pem',
       user: 'ubuntu',
-      host: ["54.180.116.188"],
+      host: '54.180.116.188',
       ref: 'origin/develop',
       repo: 'git@github.com:ldongg/backend_node.git',
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no', 'ForwardAgent=yes'],
@@ -34,9 +34,9 @@ module.exports = {
     production: {
       key: '~/.ssh/awsKey.pem',
       user: 'ubuntu',
-      host: ["54.180.116.188"],
+      host: '54.180.116.188',
       ref: 'origin/release',
-      repo: 'git@github.com:ldongg/backend_node.git',
+      repo: 'https://github.com/ldongg/backend_node.git',
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no', 'ForwardAgent=yes'],
       path: './var/www/backend_node_product',
       'pre-setup' : 'scripts/pre-setup.sh',
